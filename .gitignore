@@ -28,7 +28,6 @@ server/views/setup.pug
 
 # Config Files
 .env
-/config.yml
 
 # Data directories
 /repo

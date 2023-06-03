@@ -1,0 +1,77 @@
+port: ${WIKI_PORT}
+
+# ---------------------------------------------------------------------
+# Database
+# ---------------------------------------------------------------------
+# Supported Database Engines:
+# - postgres = PostgreSQL 9.5 or later
+# - mysql = MySQL 8.0 or later (5.7.8 partially supported, refer to docs)
+# - mariadb = MariaDB 10.2.7 or later
+# - mssql = MS SQL Server 2012 or later
+# - sqlite = SQLite 3.9 or later
+
+db:
+  type: postgres
+
+  # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
+  host: ${DB_HOST}
+  port: ${DB_PORT}
+  user: ${DB_USER}
+  pass: ${DB_PASSWORD}
+  db: ${DB_NAME}
+  ssl: true
+  sslOptions:
+    auto: false
+    rejectUnauthorized: false
+
+# ---------------------------------------------------------------------
+# IP address the server should listen to
+# ---------------------------------------------------------------------
+# Leave 0.0.0.0 for all interfaces
+
+bindIP: 0.0.0.0
+
+# ---------------------------------------------------------------------
+# Log Level
+# ---------------------------------------------------------------------
+# Possible values: error, warn, info (default), verbose, debug, silly
+
+logLevel: info
+
+# ---------------------------------------------------------------------
+# Log Format
+# ---------------------------------------------------------------------
+# Output format for logging, possible values: default, json
+
+logFormat: default
+
+# ---------------------------------------------------------------------
+# Offline Mode
+# ---------------------------------------------------------------------
+# If your server cannot access the internet. Set to true and manually
+# download the offline files for sideloading.
+
+offline: false
+
+# ---------------------------------------------------------------------
+# High-Availability
+# ---------------------------------------------------------------------
+# Set to true if you have multiple concurrent instances running off the
+# same DB (e.g. Kubernetes pods / load balanced instances). Leave false
+# otherwise. You MUST be using PostgreSQL to use this feature.
+
+ha: false
+
+# ---------------------------------------------------------------------
+# Data Path
+# ---------------------------------------------------------------------
+# Writeable data path used for cache and temporary user uploads.
+dataPath: ./data
+
+# ---------------------------------------------------------------------
+# Body Parser Limit
+# ---------------------------------------------------------------------
+# Maximum size of API requests body that can be parsed. Does not affect
+# file uploads.
+
+bodyParserLimit: 5mb
