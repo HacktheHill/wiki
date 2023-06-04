@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/Requarks/wiki#readme",
   "engines": {
-    "node": ">=10.12"
+    "node": ">=16.0.0 <17.0.0"
   },
   "dependencies": {
     "@azure/storage-blob": "12.12.0",
