@@ -2,7 +2,7 @@
   "buildCommand": "npm run build",
   "functions":{
     "server/index.js":{
-      "memory": "1024"
+      "memory": 1024
     }
   }
 }
