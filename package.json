@@ -6,7 +6,7 @@
   "main": "wiki.js",
   "dev": false,
   "scripts": {
-    "start": "node server",
+    "start": "node api",
     "dev": "node dev",
     "build": "webpack --profile --config dev/webpack/webpack.prod.js",
     "watch": "webpack --config dev/webpack/webpack.dev.js",

@@ -25,7 +25,7 @@ let WIKI = {
   IS_MASTER: true,
   ROOTPATH: process.cwd(),
   INSTANCE_ID: nanoid(10),
-  SERVERPATH: path.join(process.cwd(), 'server'),
+  SERVERPATH: path.join(process.cwd(), 'api'),
   Error: require('./helpers/error'),
   configSvc: require('./core/config'),
   kernel: require('./core/kernel'),
