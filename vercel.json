@@ -1,6 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "function":{
+  "functions":{
     "server/index.js": {
       "runtime": "16.x"
     }
