@@ -2,7 +2,7 @@
   "buildCommand": "npm run build",
   "functions":{
     "server/index.js": {
-      "runtime": "16.x"
+      "memory":1024
     }
   }
 
