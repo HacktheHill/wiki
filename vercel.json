@@ -1,9 +1,6 @@
 {
   "buildCommand": "npm run build",
-  "functions":{
-    "server/index.js": {
-      "memory":1024
-    }
-  }
-
+  "routes": [
+    { "src": "/(.*)", "dest": "server/index.js" }
+ ]
 }
