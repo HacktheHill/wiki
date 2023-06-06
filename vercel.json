@@ -1,8 +1,5 @@
 {
+  "version": 2,
   "buildCommand": "node patch.js && export NODE_OPTIONS=--openssl-legacy-provider && npx webpack --profile --config dev/webpack/webpack.prod.js && echo done",
-  "functions":{
-    "api/index.js":{
-      "memory": 1024
-    }
-  }
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 }
