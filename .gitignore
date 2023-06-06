@@ -18,9 +18,9 @@ npm-debug.log*
 
 # Generated assets
 /assets
-server/views/master.pug
-server/views/legacy/master.pug
-server/views/setup.pug
+/api/views/master.pug
+/api/views/legacy/master.pug
+/api/views/setup.pug
 
 # Webpack
 .webpack-cache
@@ -46,4 +46,6 @@ test-results/
 .scannerwork
 
 # Localization Resources
-/server/locales/**/*.yml
+/api/locales/**/*.yml
+api/views/master.pug
+api/views/setup.pug

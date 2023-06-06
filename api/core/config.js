@@ -46,6 +46,8 @@ module.exports = {
       appconfig.db.pass = process.env.DB_PASSWORD;
       appconfig.db.db = process.env.DB_NAME;
       appconfig.db.port = process.env.DB_PORT;
+      appconfig.db.port = process.env.DB_PORT;
+      appconfig.db.ssl = process.env.SSL;
 
       appdata = yaml.safeLoad(fs.readFileSync(confPaths.data, 'utf8'))
       appdata.regex = require(confPaths.dataRegex)

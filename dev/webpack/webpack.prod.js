@@ -209,21 +209,21 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'dev/templates/master.pug',
-      filename: '../server/views/master.pug',
+      filename: '../api/views/master.pug',
       hash: false,
       inject: false,
       excludeChunks: ['setup', 'legacy']
     }),
     new HtmlWebpackPlugin({
       template: 'dev/templates/legacy.pug',
-      filename: '../server/views/legacy/master.pug',
+      filename: '../api/views/legacy/master.pug',
       hash: false,
       inject: false,
       excludeChunks: ['setup', 'app']
     }),
     new HtmlWebpackPlugin({
       template: 'dev/templates/setup.pug',
-      filename: '../server/views/setup.pug',
+      filename: '../api/views/setup.pug',
       hash: false,
       inject: false,
       excludeChunks: ['app', 'legacy']

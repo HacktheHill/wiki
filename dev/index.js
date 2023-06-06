@@ -28,7 +28,7 @@ const init = {
     }
     global.WP_DEV.devMiddleware.waitUntilValid(() => {
       console.info(chalk.yellow.bold('>>> Starting Wiki.js in DEVELOPER mode...'))
-      require('../server')
+      require('../api')
 
       process.stdin.setEncoding('utf8')
       process.stdin.on('data', data => {
@@ -81,7 +81,7 @@ const init = {
     process.removeAllListeners('unhandledRejection')
     process.removeAllListeners('uncaughtException')
 
-    require('../server')
+    require('../api')
   }
 }
 

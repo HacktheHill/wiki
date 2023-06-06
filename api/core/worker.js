@@ -3,7 +3,7 @@ const path = require('path')
 let WIKI = {
   IS_DEBUG: process.env.NODE_ENV === 'development',
   ROOTPATH: process.cwd(),
-  SERVERPATH: path.join(process.cwd(), 'server'),
+  SERVERPATH: path.join(process.cwd(), 'api'),
   Error: require('../helpers/error'),
   configSvc: require('./config')
 }
