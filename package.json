@@ -8,13 +8,10 @@
   "scripts": {
     "start": "node api",
     "dev": "node dev",
-    "build": "node patch.js && export NODE_OPTIONS=--openssl-legacy-provider && npx webpack --profile --config dev/webpack/webpack.prod.js",
+    "build": "npx webpack --profile --config dev/webpack/webpack.prod.js",
     "watch": "npx webpack --config dev/webpack/webpack.dev.js",
     "test": "npx eslint --format codeframe --ext .js,.vue . && pug-lint api/views && jest",
     "cypress:open": "npx cypress open"
-  },
-  "engines": {
-    "node": "16.x"
   },
   "keywords": [
     "wiki",
