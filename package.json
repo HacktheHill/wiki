@@ -13,6 +13,9 @@
     "test": "npx eslint --format codeframe --ext .js,.vue . && pug-lint api/views && jest",
     "cypress:open": "npx cypress open"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "keywords": [
     "wiki",
     "wikis",
